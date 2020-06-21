@@ -1,0 +1,12 @@
+= IRBlaster
+
+An API for using the IR (Infrared) blaster that is available in selected Android devices
+
+== Synopsis
+
+This library provides access to the https://developer.android.com/reference/android/hardware/ConsumerIrManager[ConsumerIrManager] Android class in Codename One, which provides an API to control the IR blaster on supported devices.
+
+The {@link ca.weblite.irblaster.IRBlaster} class provides the full API.
+
+
+

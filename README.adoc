@@ -1,0 +1,52 @@
+= Codename One IRBlaster Library
+
+An API for using the IR (Infrared) blaster that is available in selected Android devices, in https://www.codenameone.com[Codename One].
+
+== Synopsis
+
+This library provides access to the https://developer.android.com/reference/android/hardware/ConsumerIrManager[ConsumerIrManager] Android class in Codename One, which provides an API to control the IR blaster on supported devices.
+
+== License
+
+Apache 2.0
+
+== Installation
+
+Install through Codename One settings.  
+
+If you haven’t activated any cn1libs before in your Codename One projects, see https://www.codenameone.com/blog/automatically-install-update-distribute-cn1libs-extensions.html[this tutorial] which explains the process.
+
+== Usage Example
+
+[source,java]
+----
+if (!IRBlaster.hasIrEmitter()) {
+	ToastBar.showErrorMessage("This device is not equipped with an Infrared Blaster");
+	return;
+}
+  
+IRBlaster.transmit(command.getFrequency(), command.getPattern());
+----
+
+== Documentation
+
+. https://shannah.github.io/IRBlaster/javadoc[JavaDocs]
+
+== Building from Source
+
+[source,bash]
+----
+git clone https://github.com/shannah/IRBlaster
+cd IRBlaster
+sh setup.sh
+./antw jar
+----
+
+== Credits
+
+. Written by https://www.sjhannah.com[Steve Hannah]
+. Built using https://www.codenameone.com[Codename One]
+
+
+
+
